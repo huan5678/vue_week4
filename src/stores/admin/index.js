@@ -7,6 +7,14 @@ export const useAdminStore = defineStore("admin", function () {
   const expired = ref("");
   const isLoggedIn = ref(false);
 
+  function handleLogin(data) {
+    Api({
+      method: "post",
+      url: `admin/signin`,
+      data: data,
+    });
+  }
+
   function handleCheckUser() {
     Api({ method: "post", url: `api/user/check`, token: token.value })
       .then((res) => {
@@ -53,6 +61,7 @@ export const useAdminStore = defineStore("admin", function () {
     token,
     expired,
     isLoggedIn,
+    handleLogin,
     handleSetLogin,
     handleSetLogout,
     handleCheckUser,

@@ -1,5 +1,5 @@
 <script>
-import { onMounted, onBeforeMount, computed } from "vue";
+import { onBeforeMount, computed } from "vue";
 import { useRouter } from "vue-router";
 import useStore from "@/stores";
 import ProductsTable from "@/components/ProductsTable.vue";
@@ -17,7 +17,7 @@ export default {
   },
   setup() {
     const { adminStore, modalStore } = useStore();
-    const { isLoggedIn, handleCheckUser, handleGetToken } = adminStore;
+    const { handleCheckUser, handleGetToken } = adminStore;
 
     const { state } = modalStore;
 
