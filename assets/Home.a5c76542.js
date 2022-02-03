@@ -1,0 +1,1 @@
+import{u as t,f as n}from"./vendor.189b3d61.js";import{u as r}from"./index.69acf359.js";const d={setup(){const e=t(),{adminStore:o}=r(),{handleCheckUser:s}=o;n(()=>{setTimeout(()=>{s()===!0?e.push("/admin"):e.push("/login")},1e3)})}};export{d as default};
