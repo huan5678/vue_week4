@@ -49,7 +49,7 @@ export default {
       <h2 class="text-4xl font-medium">產品列表</h2>
       <h2 class="text-xl ml-auto">管理者登出</h2>
       <button
-        class="rounded px-6 py-2 bg-danger-500 text-white hover:bg-danger-600 transition duration-300"
+        class="rounded px-6 py-2 bg-danger-500 text-white hover:bg-danger-600 hover:shadow hover:shadow-danger-400 transition duration-300"
         @click="handleIsLogout()"
       >
         登出
@@ -121,7 +121,7 @@ export default {
           <td class="py-2 px-4 text-center whitespace-nowrap">
             <button
               type="button"
-              class="text-white bg-primary-500 rounded py-2 px-4 hover:bg-primary-600 transition duration-200"
+              class="text-white bg-primary-500 rounded py-2 px-4 hover:bg-primary-600 hover:shadow hover:shadow-primary-400 transition duration-200"
               @click="openModal('getDetail', item)"
             >
               查看細節
@@ -130,7 +130,7 @@ export default {
           <td class="py-2 px-4 text-center whitespace-nowrap">
             <button
               type="button"
-              class="text-white bg-secondary-500 rounded py-2 px-4 hover:bg-secondary-600 transition duration-200"
+              class="text-white bg-secondary-700 rounded py-2 px-4 hover:bg-secondary-800 hover:shadow hover:shadow-secondary-400 transition duration-200"
               @click="openModal('productEdit', item)"
             >
               修改內容
@@ -139,7 +139,7 @@ export default {
           <td class="py-2 px-4 text-center whitespace-nowrap">
             <button
               type="button"
-              class="text-white bg-danger-500 rounded py-2 px-4 hover:bg-danger-600 transition duration-200"
+              class="text-white bg-danger-500 rounded py-2 px-4 hover:bg-danger-600 hover:shadow hover:shadow-danger-400 transition duration-200"
               @click="openModal('productDelete', item)"
             >
               刪除品項
@@ -152,7 +152,7 @@ export default {
       <p>目前有{{ productList.products.length }}項產品</p>
       <button
         type="button"
-        class="text-white bg-warning-500 rounded py-2 px-4 hover:bg-warning-600 transition duration-200"
+        class="text-white bg-warning-500 rounded py-2 px-4 hover:bg-warning-600 hover:shadow hover:shadow-warning-400 transition duration-200"
         @click="openModal('productCreate', tempProduct)"
       >
         新增品項

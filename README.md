@@ -1,7 +1,7 @@
-# Vue 3 + Vite
+# 元件化
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+- 將後台頁面 Modal 以及分頁改成元件
+- 使用 import module 來引入元件
+- 使用者可以打開 Modal 新增、編輯、刪除商品
 
-## Recommended IDE Setup
-
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+## 串接圖片上傳 API 功能及自訂欄位

@@ -30,21 +30,21 @@ export default {
 </script>
 
 <template>
-  <section class="space-y-4 bg-gray-50 rounded-md overflow-hidden w-2/3">
+  <section class="space-y-4 bg-gray-50 rounded-md overflow-hidden">
     <ModalCardTitle title="請確認是否刪除" :close-modal="closeModal" />
     <p class="p-2 text-secondary-500 text-center text-xl">
       {{ productData.title }}
     </p>
     <div class="container flex justify-between gap-4 p-4">
       <button
-        class="flex-auto py-2 bg-danger-500 text-white hover:bg-danger-700 transition duration-300 rounded-md"
+        class="flex-auto py-2 bg-danger-500 text-white hover:bg-danger-600 hover:shadow hover:shadow-danger-500 transition duration-300 rounded-md"
         type="button"
         @click="handleSetDeleteProduct(productData.id)"
       >
         確認刪除
       </button>
       <button
-        class="flex-auto py-2 bg-gray-500 text-white hover:bg-secondary-700 transition duration-300 rounded-md"
+        class="flex-auto py-2 bg-gray-500 text-white hover:bg-gray-600 hover:shadow hover:shadow-gray-500 transition duration-300 rounded-md"
         @click="closeModal"
         type="button"
       >

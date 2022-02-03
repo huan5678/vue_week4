@@ -20,7 +20,11 @@ export default {
         username,
         password,
       };
-      handleLogin(data)
+      Api({
+        method: "post",
+        url: `admin/signin`,
+        data: data,
+      })
         .then((res) => {
           const data = {
             token: res.data.token,

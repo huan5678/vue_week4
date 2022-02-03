@@ -32,7 +32,7 @@ export default {
       @click="handlerBackdropClick"
     >
       <div
-        class="transition-all container h-full backdrop p-8"
+        class="transition-all container backdrop p-8 flex justify-center items-center"
         :class="
           isOpenModal
             ? 'ease-[cubic-bezier(.51,.24,.32,1.3)] duration-300'

@@ -126,6 +126,19 @@ export default {
             <option value="鞋類">鞋類</option>
           </select>
         </div>
+        <div class="flex-auto">
+          <label for="productRating" class="block mb-4">產品星級</label>
+          <select
+            class="rounded w-full"
+            id="productRating"
+            required
+            v-model="productData.rating"
+          >
+            <option v-for="star in 5" :value="star" :key="star + new Date()">
+              {{ star }}星
+            </option>
+          </select>
+        </div>
       </div>
       <div class="flex space-between gap-4">
         <div class="flex-auto">
@@ -263,13 +276,13 @@ export default {
       </div>
       <div class="flex justify-between gap-4">
         <button
-          class="flex-auto py-2 bg-success-500 text-white hover:bg-success-700 transition duration-300 rounded-md"
+          class="flex-auto py-2 bg-success-500 text-white hover:bg-success-600 hover:shadow hover:shadow-success-400 transition duration-300 rounded-md"
           type="submit"
         >
           {{ selectType === "productEdit" ? "確定修改" : "新增產品" }}
         </button>
         <button
-          class="flex-auto py-2 bg-gray-500 text-white hover:bg-gray-700 transition duration-300 rounded-md"
+          class="flex-auto py-2 bg-gray-500 text-white hover:bg-gray-600 hover:shadow hover:shadow-gray-400 transition duration-300 rounded-md"
           @click="handleResetFormInput()"
           type="reset"
         >
